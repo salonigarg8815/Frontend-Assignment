@@ -13,10 +13,6 @@ const InventaryBody = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (!name, !category, !date, !orderType, !price, !quantity) {
-            alert("please fill the fields")
-            return;
-        }
         const product = { name, category, date, orderType, price, quantity };
         navigation('/inventary/NewInventaryPage', { state: { product } })
 
